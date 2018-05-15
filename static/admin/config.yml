@@ -25,7 +25,7 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "story-post"}
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "text"}
@@ -33,12 +33,12 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
 
   - name: "collaborator"
-    label: "Story"
+    label: "Collaborator"
     folder: "src/pages/collaborator"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "collaborator-post"}
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
       - {label: "Name", name: "name", widget: "string"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Group", name: "group", widget: "select", options: ["editor", "contributor", "sponsor"]}
