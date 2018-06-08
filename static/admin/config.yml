@@ -20,6 +20,14 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
 
+  - label: "Gallery"
+    name: "galleryImages"
+    folder: "src/pages/gallery"
+    create: true
+    widget: "list"
+    field:
+      - {label: Image, name: image, widget: image}
+
   - name: "story"
     label: "Story"
     folder: "src/pages/story"
