@@ -40,6 +40,7 @@ collections:
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Author", name: "author", widget: "relation", collection: "collaborator", searchFields: ["name"], valueField: "name"}
       - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Gallery", name: "galleryImages", widget: "list", field: {label: Image, name: image, widget: image}}
 
   - name: "collaborator"
     label: "Collaborator"
